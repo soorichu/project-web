@@ -22,7 +22,7 @@ define([
 		
 		
 		//모듈 선언
-		var app = angular.module('myApp', [], function ($provide, $compileProvider, $controllerProvider, $filterProvider) {
+		var app = angular.module('project-web', [], function ($provide, $compileProvider, $controllerProvider, $filterProvider) {
 		
 			//부트스트랩 과정에서만 가져올 수 있는 프로바이더들을 각 registers와 연계될 수 있도록
 			routeConfig.setProvide($provide); //for services

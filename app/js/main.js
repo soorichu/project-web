@@ -34,9 +34,9 @@ requirejs.config({
 	paths:{
 
 		//뒤에 js 확장자는 생략한다.
-		'text': '../lib/require/text', //HTML 데이터를 가져올때 text! 프리픽스를 붙여준다.
-		'jquery': '../lib/jquery/jquery',
-		'jquery-ui': '../lib/jquery/jquery-ui-1.10.2.min',
+		'text': '../lib/requirejs-text/text', //HTML 데이터를 가져올때 text! 프리픽스를 붙여준다.
+		'jquery': '../lib/jquery/dist/jquery',
+		'jquery-ui': '../lib/jquery-ui/jquery-ui.min',
 		'angular': '../lib/angular/angular',
 		'library': '../lib'
 	},
@@ -86,7 +86,7 @@ requirejs( [
 			//위의 디펜던시 중 myApp이 포함된 app.js가 로드된 이후에 아래가 수행된다.
 			//임의로 앵귤러 부트스트래핑을 수행한다.
 			
-			angular.bootstrap(document, ['myApp']);
+			angular.bootstrap(document, ['project-web']);
 			
 		});
 		
