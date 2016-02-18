@@ -11,6 +11,7 @@ Run `grunt` for building and `grunt serve` for preview.
 
 Running `grunt test` will run the unit tests with karma.
 
+npm install grunt --save-dev
 npm install grunt-autoprefixer --save-dev
 npm install grunt-concurrent --save-dev
 npm install grunt-contrib-clean --save-dev
@@ -32,5 +33,3 @@ npm install grunt-svgmin --save-dev
 npm install grunt-usemin --save-dev
 npm install time-grunt --save-dev
 npm install jshint-stylish --save-dev
-
-npm install grunt --save-dev
