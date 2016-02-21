@@ -2,9 +2,9 @@
 'use strict';
 
 define(['app', 'angularMocks'], function(app) {
-	describe('myApp.view1 module', function() {
+	describe('projectWeb.view1 module', function() {
 
-		beforeEach(module('myApp.view1'));
+		beforeEach(module('projectWeb.view1'));
 
 		describe('view1 controller', function() {
 			it('should ....', inject(function($controller) {

@@ -8,11 +8,11 @@ define([
 	'index/index'
 ], function(angular, angularRoute, view1, view2) {
 	// Declare app level module which depends on views, and components
-	return angular.module('myApp', [
+	return angular.module('projectWeb', [
 		'ngRoute',
-		'myApp.view1',
-		'myApp.view2',
-		'myApp.index'
+		'projectWeb.view1',
+		'projectWeb.view2',
+		'projectWeb.index'
 	]).
 	config(['$routeProvider', function($routeProvider) {
 		$routeProvider.otherwise({redirectTo: '/index'});
