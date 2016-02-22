@@ -5,7 +5,7 @@ if(window.__karma__) {
 	var TEST_REGEXP = /spec\.js$/;
 
 	var pathToModule = function(path) {
-		return path.replace(/^\/base\/app\//, '').replace(/\.js$/, '');
+		return path.replace(/^\/base\/index\//, '').replace(/\.js$/, '');
 	};
 
 	Object.keys(window.__karma__.files).forEach(function(file) {
@@ -18,10 +18,10 @@ if(window.__karma__) {
 
 require.config({
 	paths: {
-		angular: '../bower_components/angular/angular',
-		angularRoute: '../bower_components/angular-route/angular-route',
-		angularMocks: '../bower_components/angular-mocks/angular-mocks',
-		text: '../bower_components/requirejs-text/text'
+		angular: '../../bower_components/angular/angular',
+		angularRoute: '../../bower_components/angular-route/angular-route',
+		angularMocks: '../../bower_components/angular-mocks/angular-mocks',
+		text: '../../bower_components/requirejs-text/text'
 	},
 	shim: {
 		'angular' : {'exports' : 'angular'},
@@ -36,16 +36,16 @@ require.config({
 	],
 	deps: window.__karma__ ? allTestFiles : [],
 	callback: window.__karma__ ? window.__karma__.start : null,
-	baseUrl: window.__karma__ ? '/base/app' : '',
+	baseUrl: window.__karma__ ? '/base/index' : '',
 });
 
 require([
 	'angular',
-	'app'
-	], function(angular, app) {
+	'index'
+	], function(angular, index) {
 		var $html = angular.element(document.getElementsByTagName('html')[0]);
 		angular.element().ready(function() {
-			// bootstrap the app manually
+			// bootstrap the index manually
 			angular.bootstrap(document, ['projectWeb']);
 		});
 	}
