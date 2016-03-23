@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 logs/*
 !.gitkeep
 node_modules/
@@ -8,3 +9,15 @@ tmp
 /dist/
 /.tmp/
 project-web.iml
+=======
+logs/*
+!.gitkeep
+node_modules/
+app/bower_components/
+tmp
+.DS_Store
+.idea
+/dist/
+/.tmp/
+project-web.iml
+>>>>>>> refs/remotes/origin/master
